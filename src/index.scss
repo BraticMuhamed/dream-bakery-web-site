@@ -1,0 +1,23 @@
+@import url(/src/login/login.css);
+@import "/node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
+
+$primary-light: #c69c6c;
+$secondary-light: #bdb7ab;
+$info-light: #343957;
+$primary-dark: #3c1361;
+$secondary-dark: #242526;
+$info-dark: #152238;
+
+$theme-colors: (
+	"primary": $primary-light,
+	"secondary": $secondary-light,
+	"info": $info-light
+);
+
+$theme-colors-dark: (
+	"primary": $primary-dark,
+	"secondary": $secondary-dark,
+	"info": $info-dark
+);
+
+@import "bootstrap/scss/bootstrap";

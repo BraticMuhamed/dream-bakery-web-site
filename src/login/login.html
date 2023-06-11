@@ -1,0 +1,30 @@
+<div id="login-page" class="container-fluid py-5">
+  <div class="row justify-content-center">
+    <h1 class="text-center my-5">
+      "Dream Bakery"
+    </h1>
+    <form id="login-form" class="row justify-content-center">
+      <div class="row justify-content-center">
+        <div class="col-3">
+          <label for="username" class="form-label">Username</label>
+          <input name="username" type="email" class="form-control" required/>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-3">
+          <label for="password" class="form-label">Password</label>
+          <input
+            id="password"
+            class="form-control"
+            name="password"
+            type="password"
+            required
+            minlength="8"
+          />
+          <span id="password-error-message" class="password-error-message"></span>
+        </div>
+      </div>
+      <button id="login-submit-button" type="submit" class="btn btn-primary my-3 col-1">Log in</button>
+    </form>
+  </div>
+</div>

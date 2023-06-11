@@ -1,0 +1,60 @@
+<div class="container">
+	<div class="row justify-content-between align-items-center">
+		<button id="add-recipe" class="d-flex btn btn-primary my-5 align-items-center justify-content-center col-3" type="button" data-bs-toggle="modal" data-bs-target="#recipe-modal">
+			<i class="bi bi-file-earmark-plus-fill col" style="font-size: 2rem"></i>
+			<span class="col-10">Add new recipe</span>
+		</button>
+		<button id="change-theme" class="btn btn-info col-2">Change theme</button>
+	</div>
+	<ol id="recipes-list" class="list-group">
+	</ol>
+</div>
+<div class="modal fade" id="recipe-modal" tabindex="-1" aria-labelledby="recipe-modal-label" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+		<div class="modal-header">
+			<h1 class="modal-title fs-5" id="recipe-modal-label">Add new recipe</h1>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<form id="form-recipe">
+			<div class="modal-body">
+					<div class="input-group mb-3">
+						<select class="form-select" required aria-label="Raw material selection" id="raw-materials-selection" name="raw-materials-selection">
+							<option selected value="">Please, choose a raw material</option>
+						</select>
+					</div>
+					<div class="input-group row">
+						<label for="quantity" class="form-label col-12">Quantity</label>
+						<input name="quantity" type="number" min="0" class="form-control col-3" id="quantity" required>
+						<div class="col-auto">
+							<select class="form-select" aria-label="Unit selection" id="unit-selection" name="unit-selection" required>
+								<option value="" selected>Unit</option>
+							</select>
+						</div>
+					</div>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			<button type="submit" class="btn btn-primary">Save changes</button>
+			</div>
+		</form>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="remove-recipe-modal" tabindex="-1" aria-labelledby="remove-recipe-modal-label" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+		<div class="modal-header">
+			<h1 class="modal-title fs-5" id="remove-recipe-modal-label">Remove recipe</h1>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<p>Are you sure?</p>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+			<button id="remove-recipe-button" type="button" class="btn btn-primary">Yes</button>
+		</div>
+		</div>
+	</div>
+</div>
